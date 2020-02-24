@@ -6620,5 +6620,44 @@ h1.innerHTML = 'Lick II V I - C Maior'
 video.src = 'https://www.youtube.com/embed/w4R0YVmPJG0'
 video.style.display = 'block'
 
+tab(3, 8)
+tab(3, 9)
+tab(3, 10)
+tab(3, 11)
+tab(3, 12)
+
+tab(4, 7)
+tab(4, 8)
+tab(4, 9)
+tab(4, 10)
+tab(4, 11)
+tab(4, 12)
+
+tab(5, 10)
+tab(5, 12)
+tab(2, 8)
+tab(2, 9)
 
 
+
+function opacidade(e) {
+
+    for (i = 0; i < nota.length; i++){
+
+        if (nota[i].innerHTML == e){
+
+            nota[i].style.opacity = '0.4'
+
+
+        }
+
+
+    }
+    
+}
+
+colorNote('C#', 'red')
+colorNote('D#', 'red')
+colorNote('F#', 'red')
+colorNote('G#', 'red')
+colorNote('A#', 'red')
