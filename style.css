@@ -187,6 +187,7 @@
     background-color: black;
     position: absolute;
     right: -8px;
+    display: none;
 }
 
 #linha1{
