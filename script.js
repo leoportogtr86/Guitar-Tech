@@ -6598,12 +6598,7 @@ function print(nomeDaLicao, corpoDaLicao) {
 
     corpo.innerHTML = corpoDaLicao
 
-    let assinatura = document.createElement('p')
-    body.appendChild(assinatura)
-
-    assinatura.innerHTML = 'Prof. Leo Porto'
-    assinatura.style.fontFamily = 'sans-serif'
-    assinatura.style.fontWeight = 'bold'
+    
 
 
 
@@ -6613,9 +6608,10 @@ print('',' ')
 soundslice.src = 'https://www.soundslice.com/slices/m2LVc/embed-channelpost/'
 
 soundslice.style.display = 'block'
-soundslice.style.width = '52%'
-soundslice.style.top = '400px'
+soundslice.style.width = '100%'
+soundslice.style.top = '800px'
 video.style.top = '400px'
+video.style.left = '0px'
 h1.innerHTML = 'Lick II V I - C Maior'
 video.src = 'https://www.youtube.com/embed/w4R0YVmPJG0'
 video.style.display = 'block'
