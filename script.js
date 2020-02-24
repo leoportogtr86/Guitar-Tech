@@ -6539,10 +6539,10 @@ const licao5 = Licao()
 
 semana5.onclick = function () {
 
-    
+
     licao5.mudarTitulo('Semana 5')
     licao5.exercicios('1234', '4321', '1423', '1432', 'Improviso sobre II V I')
-   
+
 }
 
 let semana6 = document.createElement('li')
@@ -6553,10 +6553,10 @@ const licao6 = Licao()
 
 semana6.onclick = function () {
 
-    
+
     licao6.mudarTitulo('Semana 6')
     licao6.exercicios('Campo Harmônico Maior', 'Arpejos com 7ª', '141312', 'Sweep', 'Improviso sobre I V VI IV')
-   
+
 }
 
 
@@ -6572,7 +6572,7 @@ semana6.onclick = function () {
 
 function print(nomeDaLicao, corpoDaLicao) {
 
-    
+
     fret.style.boxShadow = 'none'
     limpar.style.display = 'none'
     mostrar.style.display = 'none'
@@ -6598,13 +6598,13 @@ function print(nomeDaLicao, corpoDaLicao) {
 
     corpo.innerHTML = corpoDaLicao
 
-    
+
 
 
 
 }
 
-print('',' ')
+print('', ' ')
 soundslice.src = 'https://www.soundslice.com/slices/m2LVc/embed-channelpost/'
 
 soundslice.style.display = 'block'
@@ -6616,31 +6616,36 @@ h1.innerHTML = 'Lick II V I - C Maior'
 video.src = 'https://www.youtube.com/embed/w4R0YVmPJG0'
 video.style.display = 'block'
 
-tab(3, 8)
-tab(3, 9)
-tab(3, 10)
-tab(3, 11)
-tab(3, 12)
+function trancricao() {
 
-tab(4, 7)
-tab(4, 8)
-tab(4, 9)
-tab(4, 10)
-tab(4, 11)
-tab(4, 12)
+    apagar()
 
-tab(5, 10)
-tab(5, 12)
-tab(2, 8)
-tab(2, 9)
+    tab(3, 8)
+    tab(3, 9)
+    tab(3, 10)
+    tab(3, 11)
+    tab(3, 12)
+
+    tab(4, 7)
+    tab(4, 8)
+    tab(4, 9)
+    tab(4, 10)
+    tab(4, 11)
+    tab(4, 12)
+
+    tab(5, 10)
+    tab(5, 12)
+    tab(2, 8)
+    tab(2, 9)
 
 
+}
 
 function opacidade(e) {
 
-    for (i = 0; i < nota.length; i++){
+    for (i = 0; i < nota.length; i++) {
 
-        if (nota[i].innerHTML == e){
+        if (nota[i].innerHTML == e) {
 
             nota[i].style.opacity = '0.4'
 
@@ -6649,7 +6654,7 @@ function opacidade(e) {
 
 
     }
-    
+
 }
 
 colorNote('C#', 'red')
@@ -6657,3 +6662,5 @@ colorNote('D#', 'red')
 colorNote('F#', 'red')
 colorNote('G#', 'red')
 colorNote('A#', 'red')
+
+setInterval(trancricao, 500)
